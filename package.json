@@ -31,7 +31,8 @@
     "watch-tests": "tsc -p . -w --outDir out",
     "pretest": "npm run compile-tests && npm run compile && npm run lint",
     "lint": "eslint src --ext ts",
-    "test": "node ./out/test/runTest.js"
+    "test": "node ./out/test/runTest.js",
+    "vsce": "vsce package"
   },
   "devDependencies": {
     "@types/glob": "^8.0.1",
@@ -41,6 +42,7 @@
     "@typescript-eslint/eslint-plugin": "^5.49.0",
     "@typescript-eslint/parser": "^5.49.0",
     "@vscode/test-electron": "^2.2.2",
+    "@vscode/vsce": "^2.18.0",
     "copy-webpack-plugin": "^11.0.0",
     "eslint": "^8.33.0",
     "glob": "^8.1.0",

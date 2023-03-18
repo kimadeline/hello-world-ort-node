@@ -12,4 +12,4 @@ Use the "Run extension" launch task, ignore the warning about a missing problem 
 
 # Packaging
 
-Run `npm run vsce`, and install the resulting VSIX with the "Instal from VSIX..." command. Open the developer console with the "Developer: Toggle Developer Tools" command, and then run the "Hello World" command, results should appear in the developer console.
+Run `npm run vsce`, and install the resulting VSIX with the "Install from VSIX..." command. Open the developer console with the "Developer: Toggle Developer Tools" command, and then run the "Hello World" command, results should appear in the developer console.

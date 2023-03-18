@@ -1,9 +1,11 @@
 import * as ort from "onnxruntime-node";
+import * as path from "path";
 
 export async function trySession() {
   try {
     // create a new session and load the specific model.
-    const session = await ort.InferenceSession.create("./model.onnx");
+    const modelPath = path.resolve(__dirname, "model.onnx");
+    const session = await ort.InferenceSession.create(modelPath);
 
     // prepare inputs. a tensor need its corresponding TypedArray as data
     const dataA = Float32Array.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]);

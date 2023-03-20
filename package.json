@@ -32,6 +32,7 @@
     "pretest": "npm run compile-tests && npm run compile && npm run lint",
     "lint": "eslint src --ext ts",
     "test": "node ./out/test/runTest.js",
+    "prevsce": "mkdir -p dist/node_modules; rsync -av node_modules/onnxruntime-node dist/node_modules --exclude lib; rsync -av node_modules/onnxruntime-common dist/node_modules --exclude lib",
     "vsce": "vsce package"
   },
   "devDependencies": {
